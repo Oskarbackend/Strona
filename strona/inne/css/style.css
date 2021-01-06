@@ -1,0 +1,180 @@
+html{
+  scroll-behavior:smooth;
+}
+*{
+  margin:0;
+  padding: 0;
+}
+
+
+header{
+  background-color: white;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+  position:sticky;
+  top:0px;
+  height: 10vh;
+}
+
+nav{
+  min-height:10vh;
+  display: flex;
+  justify-content: space-between;
+  margin:auto;
+  align-items: center;
+  width: 70%;
+}
+
+
+nav ul{
+  flex:1;
+  list-style: none;
+  justify-content: space-between;
+  display:flex;
+}
+
+nav a{
+  text-decoration: none;
+  color:black;
+}
+
+
+/*SEKCJE~~PODZIAŁ STRON~~KOLORY TŁA*/
+section{
+  height: 150vh;
+  display: flex;
+}
+.background{
+  background-image: url("../img/tlo3.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 65vh;
+}
+.background > h2{
+ font-size: 3rem;
+ color:rgb(255, 255, 255);
+ text-shadow: 3px 3px 10px black;
+ margin: auto;
+ padding-top:12rem;
+}
+
+.pomoc{
+background-image: url("../img/pomoc_techniczna.jpg");
+background-position:right;
+background-size: cover;
+position: absolute;
+right: 0;
+height: 300px;
+width: 500px;
+}
+.pomoc2{
+background-image: url("../img/kup.jpg");
+background-position:left;
+background-size: cover;
+position: absolute;
+top:200%;
+left: 0;
+height: 300px;
+width: 500px;
+}
+.kup{
+background-image: url("../img/pomoc_techniczna_2.jpg");
+background-position:right;
+background-size: cover;
+position: absolute;
+top:480%;
+right: 0;
+height: 300px;
+width: 500px;
+}
+.footer{
+background-image: url("../img/karteczki.jpg");
+background-position:right;
+background-size: cover;
+position: absolute;
+right: 0;
+height: 300px;
+width: 500px;
+
+}
+
+/*ANIMOWANA STRZAŁKA*/
+.downArrow{
+  display: flex;
+  position: absolute;
+  right:5%;
+  top:95%;
+  border-radius: 100%;
+  opacity: 0.7;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.downArrow:hover{
+  background-color: lightblue;
+}
+.bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+/*Dostosowywanie ekranu*/
+@media screen and (max-width: 700px){
+  }
+}
+
+/*COPYRIGHT*/
+#copyright{
+  clear: both;
+  padding: 10PX;
+  text-align: right;
+}
